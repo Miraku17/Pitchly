@@ -156,10 +156,10 @@ const StartupForm = () => {
               name="description"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="font-semibold">Description</FormLabel>
+                  <FormLabel className="font-semibold">Mission</FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="Briefly describe your startup"
+                      placeholder="Briefly describe the mission of your startup"
                       className="startup-form_textarea"
                       {...field}
                     />
