@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import AuthProvider from "./components/providers/SessionProvider";
 import "./globals.css";
 // import "easymde/dist/easymde.min.css";
 import { Toaster } from "@/components/ui/toaster";
@@ -68,7 +69,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={workSans.variable}>
-        {children}
+        <AuthProvider>{children}</AuthProvider>
         <Toaster />
       </body>
     </html>
